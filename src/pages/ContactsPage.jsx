@@ -12,6 +12,7 @@ import {
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { Filter } from 'components/Filter/Filter';
 import { ContactList } from 'components/ContactList/ContactList';
+import {Loader} from 'components/Loader/Loader';
 
 export const ContactsPage = () => {
   const visibleContacts = useSelector(selectVisibleContacts);
@@ -47,7 +48,7 @@ export const ContactsPage = () => {
       <h2 className='title'>Contacts</h2>
       <Filter filter={filter} setFilter={handleSetFilter} />
       {isLoading && (
-        <b style={{ display: 'block', padding: '0 0 20px 10px' }}>Loading...</b>
+       <Loader/>
       )}
       {error && <b>Error: {error}</b>}
       {visibleContacts && (

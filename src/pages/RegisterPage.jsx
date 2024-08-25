@@ -3,7 +3,7 @@ import { RegisterForm } from 'components/RegisterForm/RegisterForm';
 const RegisterPage = () => {
   return (
     <div>
-      <title className='title'>Register</title>
+      <h3 className='title'>Please register with a valid email</h3>
       <RegisterForm />
     </div>
   );

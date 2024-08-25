@@ -3,7 +3,7 @@ import { LoginForm } from 'components/LoginForm/LoginForm';
 const LoginPage = () => {
   return (
     <>
-      <title textColor={'white'}>Login</title>
+      <h3 className='title'>Please log into the app</h3>
       <LoginForm />
     </>
   );
