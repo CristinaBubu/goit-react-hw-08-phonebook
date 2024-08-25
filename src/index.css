@@ -32,3 +32,9 @@ h2 {
 .title{
   color: #ef1db0ab;
 }
+.welcome{
+  color: #eb27b0ab;
+  font-size: 40px;
+  text-align: center;
+margin: auto;
+}

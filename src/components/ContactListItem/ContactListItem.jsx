@@ -1,5 +1,5 @@
 import React from 'react';
-import css from './ContactListItem.module.css';
+import style from './ContactListItem.module.css';
 import PropTypes from 'prop-types';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
@@ -14,10 +14,10 @@ export const ContactListItem = ({ filteredContact, deleteContact }) => {
 
   return (
     <div>
-      <li className={css.item}>
+      <li className={style.item}>
         <p>{filteredContact.name}:</p>
-        <p className={css.contactAlign}>{filteredContact.number}</p>
-        <button className={css.buttonDelete} onClick={handleDelete}>
+        <p className={style.contactAlign}>{filteredContact.number}</p>
+        <button className={style.buttonDelete} onClick={handleDelete}>
           Delete
         </button>
       </li>

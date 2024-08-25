@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
-import css from './ContactForm.module.css';
+import style from './ContactForm.module.css';
 import PropTypes from 'prop-types';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
@@ -42,9 +42,9 @@ export const ContactForm = ({ addContact, contacts }) => {
   };
 
   return (
-    <form className={css.form} onSubmit={handleSubmit}>
+    <form className={style.form} onSubmit={handleSubmit}>
       <label>
-        <p className={css.label}>Name:</p>
+        <p className={style.label}>Name:</p>
         <input
           placeholder="Full name"
           type="text"
@@ -54,12 +54,12 @@ export const ContactForm = ({ addContact, contacts }) => {
           required
           value={name}
           onChange={handleNameChange}
-          className={css.input}
+          className={style.input}
         />
       </label>
 
       <label>
-        <p className={css.label}>Number:</p>
+        <p className={style.label}>Number:</p>
         <input
           placeholder="Phone number"
           type="tel"
@@ -69,10 +69,10 @@ export const ContactForm = ({ addContact, contacts }) => {
           required
           value={number}
           onChange={handleNumberChange}
-          className={css.input}
+          className={style.input}
         />
       </label>
-      <button className={css.button} type="submit">
+      <button className={style.button} type="submit">
         Add Contact
       </button>
     </form>
